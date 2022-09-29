@@ -11,10 +11,9 @@
 * JavaScript - Node JS
 * REST API - GitHub's
 * Axios - for API calls
+
 #
-## Behavior Driven Development
-#
-### This is how I broke down the problem.
+## This is how I broke down the problem.
 * Create markup with an input field and button
 * Store input data and use Eventlisteners
 * InnerHTML manipulation confirmation
