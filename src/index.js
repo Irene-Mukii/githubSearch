@@ -57,8 +57,25 @@ async function apiUserRepoSrch (reposUrl){
             //display repos using a loop
             console.log(response.data);
             for(let i in  response.data){  //try make it such that each print wont be deleted...we want all 29
-                description.innerHTML = response.data[i].description;
-                repoName.innerHTML = response.data[i].name;
+
+                let tag1 = document.createElement("p");
+                let text1 = document.createTextNode(`Name: ${response.data[i].name}`);
+                tag1.appendChild(text1);
+                
+                repos.appendChild(tag1);
+
+                let tag = document.createElement("p");
+                let text = document.createTextNode(`Description: ${response.data[i].description}`);
+                tag.appendChild(text);
+                
+                repos.appendChild(tag);
+
+                let tag2 = document.createElement('p');
+                let text2 = document.createTextNode('============================');
+                tag2.appendChild(text2);
+
+                repos.appendChild(tag2);
+                // repoName.innerHTML = response.data[i].name;
             };
             
         })
