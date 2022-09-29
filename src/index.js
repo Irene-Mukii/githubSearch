@@ -11,8 +11,8 @@ const image = document.querySelector('.avatar');
 const following = document.querySelector('.following');
 const repos = document.querySelector('.repositories');
 const numOfRepos = document.querySelector('.num-of-repos');
-const description = document.querySelector('.description');
-const repoName = document.querySelector('.repo-name');
+
+
 //on click fn (to display result field, save username to the variable allocated)
 
 searchBtn.addEventListener('click', ()=> {

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GITHUB SEARCH</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- nav bar-->
+    <div class="nav">
+        <nav class="nav-bar">
+                <img src="./Images/download.png" alt="">
+                <div>
+                    <a href="#">Home</a>
+                </div>
+                <div>
+                    <a href="#">Search User</a>
+                </div>
+                <div>
+                    <a href="#">Search Repositories</a>
+                </div>      
+        </nav>
+    </div>
+
+    <!--search field -->
+    <div class="search">
+        <label for="userName"></label>
+        <input id="userName" type="text" autocomplete="userName" placeholder="Search User">
+        
+        <button class="srch-btn">Search</button>
+    </div>
+
+
+    <!--results area  -->
+    <div class="general-info">
+        <img alt="" class="avatar">
+        <p><strong>Name: </strong>  <span class="user"></span></p>
+        <p><strong>Followers: </strong> <span class="followers"></span></p>
+        <p><strong>Following: </strong> <span class="following"></span></p>
+        <p><strong>Number of Public Repositories: </strong> <span class="num-of-repos"></span></p>
+    </div>
+    <div src="" class="repositories">
+        <p class="repo-name"><strong> REPOSITORIES:</strong></p>
+    </div>
+
+
+    <script src="./main.js"></script>
+    <script src="/src/index.js"></script>
+    
+</body>
+</html>
