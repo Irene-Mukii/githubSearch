@@ -58,23 +58,27 @@ async function apiUserRepoSrch (reposUrl){
             console.log(response.data);
             for(let i in  response.data){  //try make it such that each print wont be deleted...we want all 29
 
+                
+
                 let tag1 = document.createElement("p");
                 let text1 = document.createTextNode(`Name: ${response.data[i].name}`);
                 tag1.appendChild(text1);
+    
                 
-                repos.appendChild(tag1);
 
                 let tag = document.createElement("p");
-                let text = document.createTextNode(`Description: ${response.data[i].description}`);
+                let text = document.createTextNode(`Description: \n \n
+                 ${response.data[i].description}`);
+                tag.classList.add('description');
                 tag.appendChild(text);
                 
-                repos.appendChild(tag);
 
-                let tag2 = document.createElement('p');
-                let text2 = document.createTextNode('============================');
-                tag2.appendChild(text2);
+                let container = document.createElement("div");
+                container.classList.add('cont');
+                container.appendChild(tag1);
+                container.appendChild(tag);
 
-                repos.appendChild(tag2);
+                repos.appendChild(container);
                 // repoName.innerHTML = response.data[i].name;
             };
             
@@ -82,4 +86,8 @@ async function apiUserRepoSrch (reposUrl){
     }catch(error){
         console.log('Something is wrong');
     }
+}
+
+let object1 = {
+    thing1: []
 }
